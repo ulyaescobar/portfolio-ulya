@@ -16,11 +16,7 @@ const socialMedia = [
     icon: <FaInstagram />,
     link: "https://www.linkedin.com/in/ulyapebriyana/"
   },
-  {
-    id: 4,
-    icon: <FaTiktok />,
-    link: "https://www.linkedin.com/in/ulyapebriyana/"
-  },
+  
 ];
 
 export default socialMedia;
