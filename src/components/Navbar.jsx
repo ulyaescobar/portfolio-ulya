@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="h-24 top-0 dark:bg-bgDark dark:text-white sticky z-50">
+      <nav className="h-24 top-0 dark:bg-bgDark dark:text-white sticky z-50 bg-white">
         <div className="flex justify-between items-center border-b-2 h-full mx-4">
           <div className="uppercase tracking-widest text-lg font-medium cursor-none">
             <span className='bg-black text-white p-1 mx-1 dark:bg-white dark:text-black'>
