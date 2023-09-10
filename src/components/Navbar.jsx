@@ -58,7 +58,7 @@ const Navbar = () => {
           <div
             className={`bg-slate-200 w-4/5 h-screen  absolute top-0 left-0 transition-transform duration-500 transform ${open ? 'translate-x-0' : '-translate-x-full'} dark:bg-slate-800 `}
           >
-            <div className="relative flex flex-col gap-8 p-4 pr-20">
+            <div className="relative flex flex-col gap-8 p-4 pr-10">
               <div className="inline-flex gap-4 items-center">
                 <img src={profile} alt="profile" className='h-16 w-16 rounded-full ' />
                 <span className='uppercase'>ulya pebriyana a.s.</span>
@@ -89,7 +89,7 @@ const Navbar = () => {
                   }
                 </div>
               </div>
-              <span className='absolute top-9 right-6 text-2xl cursor-pointer hover:text-red-600' onClick={() => setOpen(false)}>
+              <span className='absolute top-9 right-3 text-2xl cursor-pointer hover:text-red-600' onClick={() => setOpen(false)}>
                 <IoMdClose />
               </span>
             </div>
