@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="h-24 top-0 dark:bg-bgDark dark:text-white">
+      <nav className="h-24 top-0 dark:bg-bgDark dark:text-white sticky z-50">
         <div className="flex justify-between items-center border-b-2 h-full mx-4">
           <div className="uppercase tracking-widest text-lg font-medium cursor-none">
             <span className='bg-black text-white p-1 mx-1 dark:bg-white dark:text-black'>
@@ -56,7 +56,7 @@ const Navbar = () => {
 
           {/* mobile view */}
           <div
-            className={`bg-slate-200 w-4/5 h-screen absolute top-0 left-0 transition-transform duration-500 transform ${open ? 'translate-x-0' : '-translate-x-full'} dark:bg-slate-800 z-50`}
+            className={`bg-slate-200 w-4/5 h-screen  absolute top-0 left-0 transition-transform duration-500 transform ${open ? 'translate-x-0' : '-translate-x-full'} dark:bg-slate-800 `}
           >
             <div className="relative flex flex-col gap-8 p-4 pr-20">
               <div className="inline-flex gap-4 items-center">
