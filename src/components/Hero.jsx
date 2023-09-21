@@ -1,17 +1,29 @@
 import hero from '../assets/images/hero.png'
 import Skills from '../data/Skills'
 import socialMedia from '../data/SocialMedia'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 
 const Hero = () => {
+
+  const [ability] = useTypewriter({
+    words: ['Backend Developer', 'Frontend Developer', 'Fullstack Developer'],
+    typeSpeed: 60,
+    deleteSpeed: 20,
+    loop: 0
+  })
+
   return (
     <>
       <section className="px-4 pt-10 ">
         <div className="flex flex-col gap-8 border-b-2 pb-20 lg:flex-row lg:gap-0">
           <div className="flex flex-col gap-4 lg:flex-1 lg:gap-5 lg:justify-center">
             <h2 className='uppercase text-lg'>welcome to my world</h2>
-            <h1 className='capitalize text-4xl font-bold lg:text-6xl'>hi, i'm <span className='text-red-600'>ulya pebriyana</span></h1>
-            <span className='text-2xl font-bold lg:text-3xl'>a Backend Developer</span>
+            <h1 className='capitalize text-4xl font-bold lg:text-6xl'>hi, i'm <span className='text-red-700'>ulya pebriyana</span></h1>
+            <div className='text-2xl font-bold lg:text-3xl'>
+              <span>a {ability}</span>
+              <Cursor cursorColor='red' />
+            </div>
             <p className='leading-6 tracking-wide pb-10'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in officia neque dolore ipsum explicabo dicta vero consequuntur, optio asperiores.
             </p>
@@ -51,7 +63,7 @@ const Hero = () => {
           </div>
           <div className="flex justify-center relative items-center lg:flex-1">
             <img src={hero} alt="hero" className='z-10 h-[450px] lg:h-[680px]' />
-            <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[500px] bottom-0 absolute bg-gradient-to-r rounded-sm shadow-xl from-slate-300 to-slate-200 dark:from-gray-700 dark:to-gray-600 "></div>
+            <div className="h-[300px] w-[350px] lg:h-[500px] lg:w-[500px] bottom-0 absolute bg-gradient-to-r rounded-lg shadow-xl from-slate-200 to-slate-100 dark:from-gray-800 dark:to-gray-700 "></div>
           </div>
         </div>
       </section>

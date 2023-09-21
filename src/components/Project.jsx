@@ -14,7 +14,7 @@ const Project = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {
           Projects.map((project) => (
-            <div  className="flex flex-col gap-4 bg-slate-100 p-4 rounded-lg group hover:bg-gradient-to-b hover:from-slate-200 dark:bg-slate-700 transition-colors duration-1000 dark:hover:bg-gradient-to-b dark:hover:from-slate-800">
+            <div key={project.id} className="flex flex-col gap-4 bg-slate-100 p-4 rounded-lg group hover:bg-gradient-to-b hover:from-slate-200 dark:bg-slate-700 transition-colors duration-1000 dark:hover:bg-gradient-to-b dark:hover:from-slate-800">
               <div className="w-full h-60 rounded-lg overflow-hidden">
                 <img
                   src={project.image}
